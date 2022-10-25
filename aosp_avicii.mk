@@ -19,7 +19,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit from avicii device
-$(call inherit-product, device/oneplus/avicii/device.mk)
+$(call inherit-product, device/oneplus/holi/device.mk)
 
 # Inherit some common PixelExperience stuff.
 $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
@@ -28,15 +28,15 @@ $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 TARGET_USES_AOSP_RECOVERY := true
 TARGET_USES_CUSTOM_AVB_KEY := true
 
-PRODUCT_NAME := aosp_avicii
-PRODUCT_DEVICE := avicii
+PRODUCT_NAME := aosp_holi
+PRODUCT_DEVICE := holi
 PRODUCT_MANUFACTURER := OnePlus
 PRODUCT_BRAND := OnePlus
-PRODUCT_MODEL := AC2001
-CUSTOM_DEVICE := Nord
+PRODUCT_MODEL := CPH2381
+CUSTOM_DEVICE := Nord CE 2 LITE
 
 PRODUCT_GMS_CLIENTID_BASE := android-oneplus
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRODUCT_DEVICE=Nord \
-    PRODUCT_NAME=Nord
+    PRODUCT_DEVICE=Nord CE 2 LITE \
+    PRODUCT_NAME=Nord CE 2 LITE
